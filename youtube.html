@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styled YouTube Frame</title>
+<style>
+  body {
+    margin: 0;
+    background: transparent;
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  }
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/sD1-rS_TM2o?rel=0&modestbranding=1" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
